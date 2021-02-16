@@ -1,0 +1,1146 @@
+/* Fonts settings */
+@font-face {
+  font-family: 'Bison Bold';
+  /* Имя шрифта */
+  src: url(../fonts/Bison-Bold.ttf);
+  /* Путь к файлу со шрифтом */
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jost Black';
+  /* Имя шрифта */
+  src: url(../fonts/Jost-Black.ttf);
+  /* Путь к файлу со шрифтом */
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jost Bold';
+  /* Имя шрифта */
+  src: url(../fonts/Jost-Bold.ttf);
+  /* Путь к файлу со шрифтом */
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Jost Medium';
+  /* Имя шрифта */
+  src: url(../fonts/Jost-Medium.ttf);
+  /* Путь к файлу со шрифтом */
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/* Basic colors */
+/* Basic settings */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+.header-overlay {
+  width: 192rem;
+  height: 108rem;
+  padding: 0;
+  background-image: url(../img/agenda/background.png);
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.header {
+  display: grid;
+  grid-template-columns: 46rem 1fr;
+  grid-template-rows: 10rem;
+  background: #171716;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 1.1em;
+  color: white;
+}
+.header-logo {
+  width: 8rem;
+  height: 6.2rem;
+  margin: 1.9rem 0 0 38rem;
+  padding: 0;
+  background-image: url(../img/header/logo-image.svg);
+  background-repeat: no-repeat;
+}
+.header-nav {
+  width: 32rem;
+  margin: 3.2rem 38rem 0 82rem;
+}
+.header-nav-item {
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-family: 'Bison Bold', sans-serif;
+  text-decoration: none;
+  margin-right: 6rem;
+}
+.main-grid {
+  margin: 1rem 38rem;
+  display: grid;
+  grid-template-columns: 55rem 1fr;
+  grid-template-rows: 24.6rem 5.2rem 9.4rem 4.2rem 10.5rem 12.8rem;
+  grid-template-areas: 'title sculpture' 'dive-into sculpture' 'theme-white sculpture' 'theme-green sculpture' 'btn-buy sculpture' 'timestamp timestamp';
+}
+.title {
+  grid-area: title;
+  width: 55rem;
+  height: 17rem;
+  padding-top: 7.6rem;
+  font-family: 'Bison Bold', sans-serif;
+  color: #73F9BC;
+  font-size: 7rem;
+  line-height: 8.4rem;
+}
+.sculpture {
+  grid-area: sculpture;
+  width: 53.6rem;
+  height: 61.8rem;
+  margin-top: 4.7rem;
+  margin-left: 7rem;
+  background-image: url(../img/agenda/image-right.png);
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.dive-into {
+  grid-area: dive-into;
+  width: 40rem;
+  height: 2.2rem;
+  padding-top: 3rem;
+  font-family: 'Bison Bold', sans-serif;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  opacity: 0.5;
+}
+.theme-white {
+  grid-area: theme-white;
+  width: 40rem;
+  height: 8.5rem;
+  padding-top: 1rem;
+  font-family: 'Jost Black', sans-serif;
+  font-size: 3.5rem;
+  line-height: 120%;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.theme-green {
+  grid-area: theme-green;
+  width: 40rem;
+  height: 4.2rem;
+  color: #73F9BC;
+  font-family: 'Jost Black', sans-serif;
+  font-size: 3.5rem;
+  line-height: 120%;
+}
+.btn-buy {
+  grid-area: btn-buy;
+  height: 6.5rem;
+  width: 36rem;
+  background: #FFFFFF;
+  margin-top: 4rem;
+  text-align: center;
+}
+.btn-buy span {
+  display: inline-block;
+  margin-top: 0.7rem;
+  font-family: 'Bison Bold', sans-serif;
+  color: #171716;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  text-decoration: none;
+}
+.timestamp {
+  grid-area: timestamp;
+  height: 6.6rem;
+  width: 116rem;
+  border: 1px solid #73F9BC;
+  background: #171716;
+  margin-top: 6.2rem;
+  z-index: 10;
+  text-align: center;
+}
+.timestamp span {
+  display: inline-block;
+  margin-top: -1rem;
+  line-height: 7.8rem;
+  font-family: 'Bison Bold', sans-serif;
+  color: #73F9BC;
+  font-size: 6.5rem;
+}
+.agenda {
+  width: 192rem;
+  height: auto;
+  margin-top: -20rem;
+  padding: 0;
+  background: #171716;
+  text-align: center;
+}
+.agenda-title {
+  margin: 0 auto;
+  width: 69rem;
+  height: 17.3rem;
+  font-family: 'Jost Black', sans-serif;
+  font-size: 12rem;
+  line-height: 17.3rem;
+  color: #73F9BC;
+}
+.agenda-choise-zone {
+  margin: 0 auto;
+  width: 69rem;
+  height: 6rem;
+  font-family: 'Bison Bold', sans-serif;
+  font-size: 5rem;
+  line-height: 6rem;
+  color: #FFFFFF;
+}
+.agenda-some-talks {
+  margin: 2rem 66.5rem 0 66.5rem;
+  width: 59.4rem;
+  height: 2.9rem;
+  font-family: 'Jost Medium', sans-serif;
+  font-size: 2rem;
+  line-height: 2.9rem;
+  color: #FFFFFF;
+}
+.timezones {
+  margin: 0;
+  padding: 5rem 38rem 4rem 38rem;
+  width: 192rem;
+  background: #171716;
+  height: 15.5rem;
+  display: grid;
+  grid-template-columns: 38.7rem 38.7rem 38.7rem;
+  grid-template-rows: 6.5rem;
+  grid-template-areas: 'tzone-active tzone tzone-vt';
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+}
+.timezones-active {
+  grid-area: tzone-active;
+  width: 38.7rem;
+  font-family: 'Jost Black', sans-serif;
+  text-align: center;
+  color: #171716;
+  background: #73F9BC;
+}
+.timezones-active span {
+  display: inline-block;
+  margin-top: 1.3rem;
+}
+.timezones-cst {
+  grid-area: tzone;
+  width: 38.7rem;
+  font-family: 'Jost Medium', sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  background: #171716;
+}
+.timezones-cst span {
+  display: inline-block;
+  margin-top: 1.3rem;
+}
+.timezones-vt {
+  grid-area: tzone-vt;
+  width: 38.7rem;
+  font-family: 'Jost Medium', sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  background: #171716;
+}
+.timezones-vt span {
+  display: inline-block;
+  margin-top: 1.3rem;
+}
+.nfr {
+  width: 192rem;
+  background: #171716;
+  height: 110rem;
+}
+.nfr-grid {
+  margin-top: -1px;
+  display: grid;
+  grid-template-columns: 94rem 94rem;
+  grid-template-rows: 11.6rem 8.6rem 6.8rem 21rem 21rem 21rem;
+  grid-template-areas: 'carrier protrack' 'car-text pro-text' 'nfr-text nfr-text' 'horizon1 horizon2' 'dazn oracle' 'salesforce nasa' 'qa1 qa2';
+}
+.nfr-item-time {
+  grid-area: time;
+  color: #73F9BC;
+  margin: 0;
+  font-family: 'Bison Bold', sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+.nfr-item-person {
+  grid-area: person;
+  margin-top: 1rem;
+  color: #FFFFFF;
+  font-family: 'Jost Black', sans-serif;
+  font-size: 2rem;
+  line-height: 2.9rem;
+}
+.nfr-item-theme {
+  grid-area: theme;
+  width: 34rem;
+  padding-top: 0.7rem;
+  color: #FFFFFF;
+  margin: 0;
+  font-family: 'Jost Black', sans-serif;
+  font-size: 2.2rem;
+  line-height: 3.18rem;
+}
+.nfr-item-btn-group {
+  grid-area: btn-group;
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 3rem;
+}
+.nfr-item-btn-group .show_abstract {
+  width: 16rem;
+  height: 4rem;
+  background-color: #73F9BC;
+  font-family: 'Bison Bold', sans-serif;
+  color: #171716;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  text-decoration: none;
+}
+.nfr-item-btn-group .show_abstract span {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.7rem;
+}
+.nfr-item-btn-group .add_calendar {
+  width: 16rem;
+  height: 4rem;
+  background-color: #FFFFFF;
+  font-family: 'Bison Bold', sans-serif;
+  color: #171716;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-decoration: none;
+  border: 2px solid #FFFFFF;
+}
+.nfr-item-btn-group .add_calendar span {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.c-track {
+  grid-area: carrier;
+  width: 69rem;
+  height: 11.6rem;
+  margin-top: 2rem;
+  margin-left: 13.5rem;
+  font-family: 'Jost Black', sans-serif;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 8rem;
+  line-height: 11.6rem;
+}
+.c-track-text {
+  grid-area: car-text;
+  width: 62.4rem;
+  height: 8.6rem;
+  margin-left: 16.8rem;
+  text-align: center;
+  font-family: 'Jost Medium', sans-serif;
+  color: #FFFFFF;
+  font-size: 3rem;
+  line-height: 4.3rem;
+}
+.p-track {
+  grid-area: protrack;
+  width: 74rem;
+  height: 11.6rem;
+  margin-top: 2rem;
+  margin-left: 13.5rem;
+  font-family: 'Jost Black', sans-serif;
+  text-align: center;
+  color: #73F9BC;
+  font-size: 8rem;
+  line-height: 11.6rem;
+}
+.p-track-text {
+  grid-area: pro-text;
+  width: 74rem;
+  height: 8.6rem;
+  margin-left: 16.8rem;
+  text-align: center;
+  font-family: 'Jost Medium', sans-serif;
+  color: #FFFFFF;
+  font-size: 3rem;
+  line-height: 4.3rem;
+}
+.nfr-header {
+  grid-area: nfr-text;
+  margin: 4rem auto;
+  text-align: center;
+  width: 192rem;
+  height: 6.8rem;
+  font-family: 'Jost Black', sans-serif;
+  color: #171716;
+  background: #73F9BC;
+  font-size: 3.5rem;
+  line-height: 5.1rem;
+}
+.nfr-header1 {
+  display: none;
+}
+#item-horizon {
+  grid-area: horizon1;
+  display: grid;
+  margin: 7rem 2rem;
+  padding: 2rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  height: 20rem;
+  grid-template-columns: 22rem 25rem 38rem;
+  grid-template-rows: 3rem 4rem 10rem;
+  grid-template-areas: 'time photo theme' 'person photo theme' 'logo photo btn-group';
+}
+#item-horizon .nfr-item-logo {
+  grid-area: logo;
+  margin-top: 2.8rem;
+  width: 15rem;
+  height: 6rem;
+  background-image: url(../img/nfr/Horizon-logo.svg);
+}
+#item-horizon .nfr-item-photo {
+  grid-area: photo;
+  width: 15rem;
+  height: 15rem;
+  background-image: url(../img/nfr/Horizon-photo.png);
+}
+#item-horizon2 {
+  grid-area: horizon2;
+  display: grid;
+  margin: 7rem 2rem;
+  padding: 1rem 2rem;
+  height: 20rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  grid-template-columns: 22rem 25rem 38rem;
+  grid-template-rows: 3rem 4rem 10rem 0.5rem;
+  grid-template-areas: 'time photo theme' 'person photo theme' 'logo photo btn-group';
+}
+#item-horizon2 .nfr-item-logo {
+  grid-area: logo;
+  margin-top: 2.8rem;
+  width: 15rem;
+  height: 6rem;
+  background-image: url(../img/nfr/Horizon-logo.svg);
+}
+#item-horizon2 .nfr-item-photo {
+  grid-area: photo;
+  width: 15rem;
+  height: 15rem;
+  background-image: url(../img/nfr/Horizon-photo2.png);
+}
+#item-dazn {
+  grid-area: dazn;
+  display: grid;
+  margin: 7rem 2rem;
+  padding: 2rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  height: 20rem;
+  grid-template-columns: 22rem 25rem 38rem;
+  grid-template-rows: 3rem 4rem 10rem;
+  grid-template-areas: 'time photo theme' 'person photo theme' 'logo photo btn-group';
+}
+#item-dazn .nfr-item-logo {
+  grid-area: logo;
+  margin-top: 2.8rem;
+  width: 15rem;
+  height: 6rem;
+  background-image: url(../img/nfr/Dazn-logo.svg);
+}
+#item-dazn .nfr-item-photo {
+  grid-area: photo;
+  width: 15rem;
+  height: 15rem;
+  background-image: url(../img/nfr/Dazn-photo.png);
+}
+#item-oracle {
+  grid-area: oracle;
+  display: grid;
+  margin: 7rem 2rem;
+  padding: 2rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  height: 20rem;
+  grid-template-columns: 22rem 25rem 38rem;
+  grid-template-rows: 3rem 4rem 10rem;
+  grid-template-areas: 'time photo theme' 'person photo theme' 'logo photo btn-group';
+}
+#item-oracle .nfr-item-logo {
+  grid-area: logo;
+  margin-top: 2.8rem;
+  width: 15rem;
+  height: 6rem;
+  background-image: url(../img/nfr/Oracle-logo.svg);
+}
+#item-oracle .nfr-item-photo {
+  grid-area: photo;
+  width: 15rem;
+  height: 15rem;
+  background-image: url(../img/nfr/Oracle-photo.png);
+}
+#item-salesforce {
+  grid-area: salesforce;
+  display: grid;
+  margin: 7rem 2rem;
+  padding: 2rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  height: 20rem;
+  grid-template-columns: 22rem 25rem 38rem;
+  grid-template-rows: 3rem 4rem 10rem;
+  grid-template-areas: 'time photo theme' 'person photo theme' 'logo photo btn-group';
+}
+#item-salesforce .nfr-item-logo {
+  grid-area: logo;
+  margin-top: 2.8rem;
+  width: 15rem;
+  height: 6rem;
+  background-image: url(../img/nfr/SalesForce-logo.svg);
+}
+#item-salesforce .nfr-item-photo {
+  grid-area: photo;
+  width: 15rem;
+  height: 15rem;
+  background-image: url(../img/nfr/SalesForce-photo.png);
+}
+#item-nasa {
+  grid-area: nasa;
+  display: grid;
+  margin: 7rem 2rem;
+  padding: 2rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  height: 20rem;
+  grid-template-columns: 22rem 25rem 38rem;
+  grid-template-rows: 3rem 4rem 10rem;
+  grid-template-areas: 'time photo theme' 'person photo theme' 'logo photo btn-group';
+}
+#item-nasa .nfr-item-logo {
+  grid-area: logo;
+  margin-top: 2.8rem;
+  width: 15rem;
+  height: 6rem;
+  background-image: url(../img/nfr/NASA-logo.svg);
+}
+#item-nasa .nfr-item-photo {
+  grid-area: photo;
+  width: 15rem;
+  height: 15rem;
+  background-image: url(../img/nfr/NASA-photo.png);
+}
+#item-q-a-1 {
+  display: grid;
+  margin: 7rem 2rem;
+  padding: 2rem 2rem;
+  height: 10rem;
+  grid-template-columns: 22rem 25rem 38rem;
+  grid-template-rows: 3rem 4rem 10rem;
+  grid-template-areas: 'time photo theme' 'person photo theme' 'logo photo btn-group';
+  grid-area: qa1;
+}
+#item-q-a-1 .nfr-item-time {
+  grid-area: time;
+  color: #73F9BC;
+  margin: 0;
+  font-family: 'Bison Bold', sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+#item-q-a-1 .nfr-item-q-a {
+  width: 34rem;
+  padding-top: 0;
+  color: #FFFFFF;
+  font-family: 'Jost Black', sans-serif;
+  font-size: 2.2rem;
+  line-height: 3.18rem;
+  margin-bottom: 4rem;
+}
+#item-q-a-2 {
+  display: grid;
+  margin: 7rem 2rem;
+  padding: 2rem 2rem;
+  height: 10rem;
+  grid-template-columns: 22rem 25rem 38rem;
+  grid-template-rows: 3rem 4rem 10rem;
+  grid-template-areas: 'time photo theme' 'person photo theme' 'logo photo btn-group';
+  grid-area: qa2;
+}
+#item-q-a-2 .nfr-item-time {
+  grid-area: time;
+  color: #73F9BC;
+  margin: 0;
+  font-family: 'Bison Bold', sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+#item-q-a-2 .nfr-item-q-a {
+  width: 34rem;
+  padding-top: 0;
+  color: #FFFFFF;
+  font-family: 'Jost Black', sans-serif;
+  font-size: 2.2rem;
+  line-height: 3.18rem;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 380px) {
+  .header-overlay {
+    width: 38rem;
+    height: 77rem;
+    background-size: cover;
+  }
+  .header {
+    display: inline-grid;
+    grid-template-columns: 11rem 25rem;
+    grid-template-rows: 4rem;
+    margin: 1.2rem 1rem 0 1rem;
+    padding: 0;
+    border: 1px solid #73F9BC;
+  }
+  .header-logo {
+    width: 10rem;
+    height: 1.7rem;
+    margin: 1.3rem 0 1.4rem 1rem;
+    background-image: url(../img/header/logo-text.svg);
+  }
+  .header-nav {
+    width: 27rem;
+    margin: 1.6rem 1rem 0 22rem;
+    background-image: url(../img/header/btn-menu.svg);
+    background-repeat: no-repeat;
+    justify-content: right;
+  }
+  .header-nav-item {
+    display: none;
+  }
+  .main-grid {
+    margin: 2rem 4.8rem;
+    background: #171716;
+    height: auto;
+    display: inline-grid;
+    grid-template-columns: 28.4rem;
+    grid-template-rows: 12.4rem 33rem 5.5rem 4.6rem 3.2rem 2.2rem 6.2rem;
+    grid-template-areas: 'title' 'sculpture' 'btn-buy' 'dive-into' 'theme-white' 'theme-green' 'timestamp';
+  }
+  .title {
+    grid-area: title;
+    width: 31rem;
+    height: 10.4rem;
+    padding-top: 2rem;
+    font-family: 'Bison Bold', sans-serif;
+    color: #73F9BC;
+    font-size: 4.3rem;
+    line-height: 5.2rem;
+  }
+  .sculpture {
+    grid-area: sculpture;
+    width: 28.5rem;
+    height: 33rem;
+    margin-top: 2.4rem;
+    margin-left: 0;
+    background-image: url(../img/agenda/image-right.png);
+    background-size: cover;
+    z-index: 2;
+  }
+  .dive-into {
+    grid-area: dive-into;
+    width: 40rem;
+    height: 2.2rem;
+    padding-top: 2.4rem;
+    font-family: 'Bison Bold', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    opacity: 0.5;
+  }
+  .theme-white {
+    grid-area: theme-white;
+    width: 30rem;
+    height: 2.2rem;
+    padding-top: 1rem;
+    font-family: 'Jost Black', sans-serif;
+    font-size: 1.8rem;
+    line-height: 120%;
+    color: #FFFFFF;
+    opacity: 0.5;
+  }
+  .theme-green {
+    grid-area: theme-green;
+    width: 28rem;
+    height: 2.2rem;
+    color: #73F9BC;
+    font-family: 'Jost Black', sans-serif;
+    font-size: 1.8rem;
+    line-height: 120%;
+  }
+  .btn-buy {
+    grid-area: btn-buy;
+    height: 5.5rem;
+    width: 30rem;
+    background: #FFFFFF;
+    margin-top: 0;
+    text-align: center;
+    z-index: 10;
+  }
+  .btn-buy span {
+    display: inline-block;
+    margin-top: 0.1rem;
+    font-family: 'Bison Bold', sans-serif;
+    color: #171716;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    text-decoration: none;
+  }
+  .timestamp {
+    grid-area: timestamp;
+    height: 3.7rem;
+    width: 30rem;
+    border: 1px solid #73F9BC;
+    background: #171716;
+    margin-top: 3.2rem;
+    z-index: 10;
+    text-align: center;
+  }
+  .timestamp span {
+    display: inline-block;
+    margin-top: 0.5rem;
+    line-height: 2.48rem;
+    font-family: 'Bison Bold', sans-serif;
+    color: #73F9BC;
+    font-size: 2rem;
+  }
+  .agenda {
+    margin-top: -1px;
+    width: 38rem;
+    background: #171716;
+    height: auto;
+    border: none;
+    display: inline-grid;
+    grid-template-columns: 28.4rem;
+    grid-template-rows: 9rem 3.6rem 6rem;
+    grid-template-areas: 'title' 'choise' 'talks';
+  }
+  .agenda-title {
+    grid-area: title;
+    margin: 0 auto;
+    width: 38rem;
+    height: 8.7rem;
+    font-family: 'Jost Black', sans-serif;
+    font-size: 6rem;
+    line-height: 8.7rem;
+    color: #73F9BC;
+  }
+  .agenda-choise-zone {
+    grid-area: choise;
+    margin: 0 auto;
+    width: 38rem;
+    height: 3.6rem;
+    font-family: 'Bison Bold', sans-serif;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    color: #FFFFFF;
+  }
+  .agenda-some-talks {
+    grid-area: talks;
+    margin: 2rem 3.8rem;
+    width: 30rem;
+    height: 5rem;
+    font-family: 'Jost Medium', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #FFFFFF;
+  }
+  .timezones {
+    width: 38rem;
+    margin-top: -1px;
+    padding: 3rem 3.6rem 4.5rem 3.6rem;
+    background: #171716;
+    height: auto;
+    display: inline-grid;
+    grid-template-columns: 31rem;
+    grid-template-rows: 5.5rem;
+    grid-template-areas: 'tzone-active';
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  .timezones-active {
+    grid-area: tzone-active;
+    width: 30rem;
+    font-family: 'Jost Black', sans-serif;
+    text-align: center;
+    color: #171716;
+    background: #73F9BC;
+  }
+  .timezones-active span {
+    display: inline-block;
+    margin-top: 1.3rem;
+  }
+  .timezones-cst,
+  .timezones-vt {
+    display: none;
+  }
+  .nfr {
+    width: 38rem;
+    height: 220rem;
+    background: #171716;
+  }
+  .nfr-grid {
+    display: inline-grid;
+    grid-template-areas: 'carrier .' 'car-text .' 'nfr-text .' 'horizon1 .' 'dazn .' 'salesforce .' 'qa1 .' 'protrack .' 'pro-text .' 'nfr-text1 .' 'horizon2 .' 'oracle .' 'nasa .' 'qa2 .';
+    grid-template-columns: 37.8rem 0.2rem;
+    grid-template-rows: 11rem 3rem 9.8rem 24rem 24rem 24rem 12rem 11rem 5rem 9.8rem 24rem 24rem 24rem 12rem;
+  }
+  .c-track {
+    grid-area: carrier;
+    width: 29rem;
+    height: 15rem;
+    margin: 1.5rem 4.5rem 0 4.5rem;
+    font-family: 'Jost Black', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 4.5rem;
+    line-height: 6.5rem;
+  }
+  .c-track-text {
+    grid-area: car-text;
+    width: 30rem;
+    height: 5.2rem;
+    margin-left: 3.6rem;
+    text-align: center;
+    font-family: 'Jost Medium', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  .p-track {
+    grid-area: protrack;
+    width: 29rem;
+    height: 15rem;
+    margin: 1.5rem 4.5rem 0 4.5rem;
+    font-family: 'Jost Black', sans-serif;
+    text-align: center;
+    color: #73F9BC;
+    font-size: 4.5rem;
+    line-height: 6.5rem;
+  }
+  .p-track-text {
+    grid-area: pro-text;
+    width: 30rem;
+    height: 8.2rem;
+    margin-left: 3.6rem;
+    text-align: center;
+    font-family: 'Jost Medium', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+  .nfr-header {
+    grid-area: nfr-text;
+    margin: 3rem 3.7rem 0 3.7rem;
+    text-align: center;
+    width: 30rem;
+    height: 6.8rem;
+    font-family: 'Jost Black', sans-serif;
+    color: #171716;
+    background: #73F9BC;
+    font-size: 2.5rem;
+    line-height: 120%;
+  }
+  .nfr-header1 {
+    grid-area: nfr-text1;
+    display: block;
+    margin: 3rem 3.7rem 0 3.7rem;
+    text-align: center;
+    width: 30rem;
+    height: 6.8rem;
+    font-family: 'Jost Black', sans-serif;
+    color: #171716;
+    background: #73F9BC;
+    font-size: 2.5rem;
+    line-height: 120%;
+  }
+  .nfr-item-time {
+    grid-area: time;
+    color: #73F9BC;
+    margin: 0;
+    font-family: 'Bison Bold', sans-serif;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  .nfr-item-person {
+    grid-area: person;
+    margin-top: 0;
+    color: #FFFFFF;
+    font-family: 'Jost Black', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+  .nfr-item-theme {
+    grid-area: theme;
+    width: 14rem;
+    margin-top: 1rem;
+    color: #FFFFFF;
+    font-family: 'Jost Black', sans-serif;
+    font-size: 1.4rem;
+    line-height: 120%;
+  }
+  .nfr-item-btn-group {
+    grid-area: btn-group;
+    display: inline-grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3rem 4rem;
+    margin-top: 1rem;
+  }
+  .nfr-item-btn-group .show_abstract {
+    width: 14rem;
+    height: 3rem;
+    background-color: #73F9BC;
+    font-family: 'Bison Bold', sans-serif;
+    color: #171716;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-align: center;
+    text-decoration: none;
+  }
+  .nfr-item-btn-group .show_abstract span {
+    margin-top: 0.3rem;
+  }
+  .nfr-item-btn-group .add_calendar {
+    width: 14rem;
+    height: 3rem;
+    margin-top: 1rem;
+    background-color: #FFFFFF;
+    font-family: 'Bison Bold', sans-serif;
+    color: #171716;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    text-decoration: none;
+    border: 2px solid #FFFFFF;
+  }
+  .nfr-item-btn-group .add_calendar span {
+    margin-top: 0.3rem;
+  }
+  #item-horizon {
+    grid-area: horizon1;
+    display: inline-grid;
+    margin: 1rem 3.5rem 0 3.5rem;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 20rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2.4rem 1.7rem 6rem 8.5rem;
+    grid-template-areas: 'photo time' 'photo person' 'photo theme' 'logo btn-group';
+  }
+  #item-horizon .nfr-item-logo {
+    grid-area: logo;
+    margin-top: 2.8rem;
+    width: 10rem;
+    height: 4rem;
+    background-image: url(../img/nfr/Horizon-logo.svg);
+    background-size: cover;
+  }
+  #item-horizon .nfr-item-photo {
+    grid-area: photo;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../img/nfr/Horizon-photo.png);
+    background-size: cover;
+  }
+  #item-dazn {
+    grid-area: dazn;
+    display: inline-grid;
+    margin: 1rem 3.5rem 0 3.5rem;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 20rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2.4rem 1.7rem 6rem 8.5rem;
+    grid-template-areas: 'photo time' 'photo person' 'photo theme' 'logo btn-group';
+  }
+  #item-dazn .nfr-item-logo {
+    grid-area: logo;
+    margin-top: 2.8rem;
+    width: 10rem;
+    height: 4rem;
+    background-image: url(../img/nfr/Dazn-logo.svg);
+    background-size: cover;
+  }
+  #item-dazn .nfr-item-photo {
+    grid-area: photo;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../img/nfr/Dazn-photo.png);
+    background-size: cover;
+  }
+  #item-salesforce {
+    grid-area: salesforce;
+    display: inline-grid;
+    margin: 1rem 3.5rem 0 3.5rem;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 20rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2.4rem 1.7rem 6rem 8.5rem;
+    grid-template-areas: 'photo time' 'photo person' 'photo theme' 'logo btn-group';
+  }
+  #item-salesforce .nfr-item-logo {
+    grid-area: logo;
+    margin-top: 2.8rem;
+    width: 10rem;
+    height: 4rem;
+    background-image: url(../img/nfr/SalesForce-logo.svg);
+    background-size: cover;
+  }
+  #item-salesforce .nfr-item-photo {
+    grid-area: photo;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../img/nfr/SalesForce-photo.png);
+    background-size: cover;
+  }
+  #item-q-a-1 {
+    grid-area: qa1;
+    display: inline-grid;
+    margin: 1rem 3.5rem 0 3.5rem;
+    padding: 0;
+    height: 10rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10rem;
+    grid-template-areas: 'time theme';
+  }
+  #item-q-a-1 .nfr-item-time {
+    grid-area: time;
+    color: #73F9BC;
+    margin: 0;
+    font-family: 'Bison Bold', sans-serif;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  #item-q-a-1 .nfr-item-q-a {
+    grid-area: theme;
+    color: #FFFFFF;
+    font-family: 'Jost Black', sans-serif;
+    font-size: 2.2rem;
+    line-height: 3.18rem;
+    margin-bottom: 4rem;
+  }
+  #item-horizon2 {
+    grid-area: horizon2;
+    display: inline-grid;
+    margin: 1rem 3.5rem 0 3.5rem;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 20rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2.4rem 1.7rem 6rem 8.5rem;
+    grid-template-areas: 'photo time' 'photo person' 'photo theme' 'logo btn-group';
+  }
+  #item-horizon2 .nfr-item-logo {
+    grid-area: logo;
+    margin-top: 2.8rem;
+    width: 10rem;
+    height: 4rem;
+    background-image: url(../img/nfr/Horizon-logo.svg);
+    background-size: cover;
+  }
+  #item-horizon2 .nfr-item-photo {
+    grid-area: photo;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../img/nfr/Horizon-photo2.png);
+    background-size: cover;
+  }
+  #item-oracle {
+    grid-area: oracle;
+    display: inline-grid;
+    margin: 1rem 3.5rem 0 3.5rem;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 20rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2.4rem 1.7rem 6rem 8.5rem;
+    grid-template-areas: 'photo time' 'photo person' 'photo theme' 'logo btn-group';
+  }
+  #item-oracle .nfr-item-logo {
+    grid-area: logo;
+    margin-top: 2.8rem;
+    width: 10rem;
+    height: 4rem;
+    background-image: url(../img/nfr/Oracle-logo.svg);
+    background-size: cover;
+  }
+  #item-oracle .nfr-item-photo {
+    grid-area: photo;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../img/nfr/SalesForce-photo.png);
+    background-size: cover;
+  }
+  #item-nasa {
+    grid-area: nasa;
+    display: inline-grid;
+    margin: 1rem 3.5rem 0 3.5rem;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    height: 21rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2.4rem 1.7rem 8rem 8.5rem;
+    grid-template-areas: 'photo time' 'photo person' 'photo theme' 'logo btn-group';
+  }
+  #item-nasa .nfr-item-logo {
+    grid-area: logo;
+    margin-top: 1rem;
+    width: 10rem;
+    height: 4rem;
+    background-image: url(../img/nfr/NASA-logo.svg);
+    background-size: cover;
+  }
+  #item-nasa .nfr-item-photo {
+    grid-area: photo;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../img/nfr/NASA-photo.png);
+    background-size: cover;
+  }
+  #item-q-a-2 {
+    grid-area: qa2;
+    display: inline-grid;
+    margin: 1rem 3.5rem 0 3.5rem;
+    padding: 0;
+    height: 10rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10rem;
+    grid-template-areas: 'time theme';
+  }
+  #item-q-a-2 .nfr-item-time {
+    grid-area: time;
+    color: #73F9BC;
+    margin: 0;
+    font-family: 'Bison Bold', sans-serif;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  #item-q-a-2 .nfr-item-q-a {
+    grid-area: theme;
+    color: #FFFFFF;
+    font-family: 'Jost Black', sans-serif;
+    font-size: 2.2rem;
+    line-height: 3.18rem;
+    margin-bottom: 4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
